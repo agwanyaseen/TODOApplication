@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_height="69dp"
+                  android:layout_width="match_parent" android:layout_alignParentStart="true"
+                  android:layout_alignParentTop="true" android:background="@color/colorPrimaryDark">
+        <EditText android:layout_width="338dp"
+                  android:layout_height="wrap_content"
+                  android:maxLines="1"
+                  android:hint="TODO LIST ENTER HERE"
+                  android:id="@+id/listItem" android:textColor="@color/colorAccent"/>
+        <Button android:layout_width="44dp"
+                android:textSize="40dp"
+                android:id="@+id/submit"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="+" android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+    <ListView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/viewList"
+              android:layout_marginTop="45dp" android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
